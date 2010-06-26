@@ -1,0 +1,26 @@
+From 0f11c8da36a08eb200dd5a60c9a8dc49b3a65814 Mon Sep 17 00:00:00 2001
+From: Jari Aalto <jari.aalto@cante.net>
+Date: Fri, 31 Aug 2007 00:43:07 +0300
+Subject: [PATCH] Makefile: run install-doc
+
+Signed-off-by: Jari Aalto <jari.aalto@cante.net>
+---
+ Makefile |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+diff --git a/Makefile b/Makefile
+index 8403a80..666972a 100644
+--- a/Makefile
++++ b/Makefile
+@@ -9,7 +9,7 @@ all: doc
+ 	@echo "Try make install"
+ 
+ .PHONY: install
+-install:
++install: install-doc
+ 	install -d $(PREFIX)/bin/
+ 	install -m 755 $(SCRIPTS) $(PREFIX)/bin/
+ 
+-- 
+1.5.3.rc5
+

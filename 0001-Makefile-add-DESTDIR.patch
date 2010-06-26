@@ -1,0 +1,48 @@
+From 1dc71f17b1d92eff32e8d0c2268f4d927432f269 Mon Sep 17 00:00:00 2001
+From: Jari Aalto <jari.aalto@cante.net>
+Date: Thu, 30 Aug 2007 23:49:22 +0300
+Subject: [PATCH] Makefile: add DESTDIR
+
+Signed-off-by: Jari Aalto <jari.aalto@cante.net>
+---
+ Makefile |   10 +++++-----
+ 1 files changed, 5 insertions(+), 5 deletions(-)
+
+diff --git a/Makefile b/Makefile
+index 8403a80..d221649 100644
+--- a/Makefile
++++ b/Makefile
+@@ -1,4 +1,4 @@
+-PREFIX=/usr/local
++PREFIX=/usr
+ 
+ SCRIPTS = guilt \
+ 	  $(filter-out $(wildcard *~),$(wildcard guilt-*))
+@@ -10,12 +10,12 @@ all: doc
+ 
+ .PHONY: install
+ install:
+-	install -d $(PREFIX)/bin/
+-	install -m 755 $(SCRIPTS) $(PREFIX)/bin/
++	install -d $(DESTDIR)$(PREFIX)/bin/
++	install -m 755 $(SCRIPTS) $(DESTDIR)$(PREFIX)/bin/
+ 
+ .PHONY: uninstall
+ uninstall:
+-	./uninstall $(PREFIX)/bin/ $(SCRIPTS)
++	./uninstall $(DESTDIR)$(PREFIX)/bin/ $(SCRIPTS)
+ 
+ .PHONY: doc
+ doc:
+@@ -23,7 +23,7 @@ doc:
+ 
+ .PHONY: install-doc
+ install-doc:
+-	$(MAKE) -C Documentation install PREFIX=$(PREFIX)
++	$(MAKE) -C Documentation install PREFIX=$(DESTDIR)$(PREFIX)
+ 
+ .PHONY: test
+ test:
+-- 
+1.5.3.rc5
+

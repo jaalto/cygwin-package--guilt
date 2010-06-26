@@ -1,0 +1,10 @@
+# This file contains extra options when files from Documentation/
+# are installed. The options are given one option per line.
+--exclude=*.conf
+--exclude=*.perl
+--exclude=*.sh
+--exclude=doc.dep
+--exclude=footer.txt
+--exclude=hash-range.txt
+--exclude=hooks.txt
+--exclude=version.txt

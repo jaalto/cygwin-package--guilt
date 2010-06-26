@@ -1,0 +1,9 @@
+sdesc: "Quilt for git; similar to Mercurial queues"
+ldesc: "Application (Git Quilt) includes series of bash scripts which add a
+Mercurial queues-like functionality and interface to git. The one
+distinguishing feature from other quilt-like porcelains, is the format
+of the patches directory. _All_ the information is stored as plain
+text - a series file and the patches (one per file). This easily lends
+itself to versioning the patches using any number of of SCMs."
+category: Devel
+requires: cygwin diffutils git
