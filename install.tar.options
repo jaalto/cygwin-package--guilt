@@ -8,3 +8,11 @@
 --exclude=hash-range.txt
 --exclude=hooks.txt
 --exclude=version.txt
+--exclude=usage-*.txt
+--exclude=Requirements
+# Duplicates of manual pages
+--exclude=guilt-*.html
+--exclude=guilt-*.txt
+--exclude=guilt.txt
+--exclude=guilt.html
+--exclude=.gitignore
