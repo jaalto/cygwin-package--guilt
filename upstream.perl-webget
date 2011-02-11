@@ -1,0 +1,2 @@
+tag1: guilt
+  http://packages.debian.org/unstable/guilt pregexp:orig.tar.gz file:guilt_0.34.orig.tar.gz new: x:
