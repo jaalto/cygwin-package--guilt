@@ -6,4 +6,4 @@ of the patches directory. _All_ the information is stored as plain
 text - a series file and the patches (one per file). This easily lends
 itself to versioning the patches using any number of of SCMs."
 category: Devel
-requires: cygwin diffutils git
+requires: diffutils git

@@ -11,12 +11,10 @@ text - a series file and the patches (one per file). This easily lends
 itself to versioning the patches using any number of of SCMs.
 
 Runtime requirements:
-  cygwin
   diffutils
   git
 
 Build requirements:
-  cygwin
   asciidoc
   xmlto
 
@@ -45,15 +43,15 @@ Language:
 ------------------------------------
 
 Build instructions:
-  unpack guilt-0.34-1-src.tar.bz2
+  unpack guilt-0.35-1-src.tar.bz2
     if you use setup to install this src package, it will be
     unpacked under /usr/src automatically
   cd /usr/src
   ./guilt*.sh all
 
 This will create:
-  guilt-0.34-1.tar.bz2
-  guilt-0.34-1-src.tar.bz2
+  guilt-0.35-1.tar.bz2
+  guilt-0.35-1-src.tar.bz2
 
 -------------------------------------------
 
@@ -64,6 +62,9 @@ Files included in the binary distro:
 
 Port Notes:
 
+----- version 0.35-1 -----
+- New upstream release 2012-01-29 Jari Aalto
+
 ----- version 0.34-1 -----
 - New upstream release 2011-02-11 Jari Aalto
 
@@ -71,4 +72,4 @@ Port Notes:
 - Initial release 2007-08-30 Jari Aalto
 
 Cygwin port maintained by: Jari Aalto <jari.aalto@cante.net>
-Copyright (C) 2007-2011 Jari Aalto; Licensed under GPL v2 or later
+Copyright (C) 2007-2012 Jari Aalto; Licensed under GPL v2 or later
