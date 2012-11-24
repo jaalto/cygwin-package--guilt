@@ -1,5 +1,5 @@
 To: cygwin-announce@cygwin.com
-Subject: Updated: guilt 0.35-1 -- Quilt for git; similar to Mercurial queues
+Subject: Updated: guilt 0.35-2 -- Quilt for git; similar to Mercurial queues
 --text follows this line--
 
 PACKAGE DESCRIPTION
@@ -18,7 +18,8 @@ itself to versioning the patches using any number of of SCMs.
 CHANGES SINCE LAST RELEASE
 ==========================
 
-Not available. This project does not maintain Change Logs.
+- Cygwin OS check fixed.
+- In general, this project does not maintain Change Logs.
 
 INSTALL OR UPGRADE NOTES
 ========================
