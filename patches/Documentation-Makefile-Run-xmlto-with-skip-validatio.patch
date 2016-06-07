@@ -8,30 +8,16 @@ Content-Transfer-Encoding: 8bit
 
 Signed-off-by: Jari Aalto <jari.aalto@cante.net>
 ---
- Documentation/Makefile |    3 ++-
- 1 files changed, 2 insertions(+), 1 deletions(-)
+ Documentation/Makefile |    1 +
+ 1 file changed, 1 insertion(+)
 
-diff --git a/Documentation/Makefile b/Documentation/Makefile
-index 9fc1165..b3930bb 100644
 --- a/Documentation/Makefile
 +++ b/Documentation/Makefile
-@@ -21,6 +21,7 @@
- ASCIIDOC_EXTRA =
- INSTALL?=install
- DOC_REF = origin/man
+@@ -24,6 +24,7 @@ XMLTO=xmlto
+ XMLTO_EXTRA = --skip-validation
+ XMLTO_EXTRA = --skip-validation
+ XMLTO_EXTRA = --skip-validation
 +XMLTO_EXTRA = --skip-validation
+ PERL=perl
  
  all: html man
- 
-@@ -71,7 +72,7 @@
- 	$(ASCIIDOC) -b xhtml11 -d manpage -f asciidoc.conf $(ASCIIDOC_EXTRA) $<
- 
- %.1 %.7 : %.xml
--	xmlto -m callouts.xsl man $<
-+	xmlto -m callouts.xsl $(XMLTO_EXTRA) man $<
- 
- %.xml : %.txt footer.txt version.txt
- 	$(ASCIIDOC) -b docbook -a version=$(VERSION) -d manpage -f asciidoc.conf $<
--- 
-1.7.5.1
-
