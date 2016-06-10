@@ -1,3 +1,4 @@
+# ARCH=noarch
 sdesc: "Quilt for git; similar to Mercurial queues"
 ldesc: "Application (Git Quilt) includes series of bash scripts which add a
 Mercurial queues-like functionality and interface to git. The one
