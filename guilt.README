@@ -27,6 +27,7 @@ Canonical download:
   # Dead 2012-11-24 http://www.kernel.org/pub/linux/kernel/people/jsipek/guilt
 
 Version control repository:
+  git clone http://repo.or.cz/guilt.git
   # Dead 2012-11-24 git://git.kernel.org/pub/scm/linux/kernel/git/jsipek/guilt.git
 
 Mailing list:
