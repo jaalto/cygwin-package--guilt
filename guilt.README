@@ -47,15 +47,15 @@ Language:
 ------------------------------------
 
 Build instructions:
-  unpack guilt-0.36+20170812+gitff2aae7-1-src.tar.bz2
+  unpack guilt-0.37+20180508+git0d2fc8a-1-src.tar.bz2
     if you use setup to install this src package, it will be
     unpacked under /usr/src automatically
   cd /usr/src
   ./guilt*.sh all
 
 This will create:
-  guilt-0.36+20170812+gitff2aae7-1.tar.xz
-  guilt-0.36+20170812+gitff2aae7-1-src.tar.xz
+  guilt-0.37+20180508+git0d2fc8a-1.tar.xz
+  guilt-0.37+20180508+git0d2fc8a-1-src.tar.xz
 
 -------------------------------------------
 
@@ -65,6 +65,9 @@ Files included in the binary distro:
 ------------------
 
 Port Notes:
+
+----- version 0.37+20180508+git0d2fc8a-1 -----
+- New upstream release 2020-05-05 Jari Aalto
 
 ----- version 0.36+20170812+gitff2aae7-1 -----
 - New upstream release 2017-09-25 Jari Aalto
@@ -86,4 +89,4 @@ Port Notes:
 - Initial release 2007-08-30 Jari Aalto
 
 Cygwin port maintained by: Jari Aalto <jari.aalto@cante.net>
-Copyright (C) 2007-2017 Jari Aalto; Licensed under GPL v2 or later
+Copyright (C) 2007-2020 Jari Aalto; Licensed under GPL v2 or later
